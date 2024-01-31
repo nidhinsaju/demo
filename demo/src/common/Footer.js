@@ -1,8 +1,11 @@
 import React from 'react'
+import Section13 from '../pages/index/Section13';
+import Section10 from '../pages/index/Section10';
 
-function Section11() {
+function Footer() {
   return (
     <div>
+		<Section10/>
       <section class=" wed-hom-footer">
 		<div class="container">
 			<div class="row foot-supp">
@@ -192,8 +195,9 @@ function Section11() {
 			</div>
 		</div>
 	</section>
+	
     </div>
   );
 }
 
-export default Section11;
+export default Footer;

@@ -10,8 +10,11 @@ import Section7 from './Section7';
 import Section8 from './Section8';
 import Section9 from './Section9';
 import Section10 from './Section10';
-import Section11 from './Section11';
-import Section12 from './Section12';
+import Footer from '../../common/Footer';
+import Copyright from '../../common/Copyright';
+
+
+
 
 function Main() {
   return (
@@ -27,8 +30,13 @@ function Main() {
         <Section8/>
         <Section9/>
         <Section10/>
-        <Section11/>
-        <Section12/>
+     
+        <Footer/>
+        <Copyright/>
+        
+        
+       
+       
     </div>
   )
 }

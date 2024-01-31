@@ -1,7 +1,7 @@
 import {useState,useEffect} from 'react'
 import { Outlet, Link } from "react-router-dom";
 
-function Header() {
+function Header_two() {
 	const img ={
 		backgroundImage:'url(images/promo.jpg)',
 	}
@@ -33,8 +33,8 @@ function Header() {
   return (
     <div>
       <div class="str">
-			<div class="hom-head" style={img}>
-			<div className={`scroll-container ${scrolled ? 'hom-top dmact' : 'hom-top'}`}>
+			
+			<div className={`scroll-container ${scrolled ? 'hom-top dmact' : 'hom-top_two'}`}>
 					<div class="container">
 						<div class="row">
 							<div class="hom-nav  db-open ">
@@ -43,7 +43,7 @@ function Header() {
                                 <i class="material-icons mopen">menu</i>
                             </div>--> */}
 								<a href="index.html" class="top-log">
-								<img src="images/home/logo-b.png" alt="" class="ic-logo"/>
+									<img src="images/home/logo-b.png" alt="" class="ic-logo"/>
 								</a>
 								<div
       className={isClicked ? 'menu ani' : 'menu'}
@@ -65,7 +65,7 @@ function Header() {
 													</li>
 													<li>
 														<a href="events.html">
-															<Link to="/Event"><img src="images/icon/calendar.png"/>Events</Link></a>
+															<img src="images/icon/calendar.png"/>Events</a>
 													</li>
 													<li>
 														<a href="all-products.html">
@@ -404,132 +404,14 @@ function Header() {
 						</div>
 					</div>
 				</div>
-				<div class="container">
-					<div class="row">
-						<div class="ban-tit">
-							<h1><b>Connect with the right<br/>Service Experts</b> Restaurants, cafe's, and bars in New york                                                            </h1>
-						</div>
-						<div class="ban-search">
-							<form name="filter_form" id="filter_form" class="filter_form">
-								<ul>
-									<li class="sr-cit">
-										<input type="text" id="select-city" name="select-city" class="autocomplete" placeholder="City"/>
-									</li>
-									<li class="sr-sea">
-										{/* <!--<input type="text" id="select-search" class="autocomplete"
-                                               placeholder="">--> */}
-										<input type="text" autocomplete="off" id="select-search" placeholder="Search for services and business..." class="search-field"/>
-										<ul id="tser-res" class="tser-res tser-res1">
-											<li>
-												<div>
-													<h4>The Royal Spa Center For Womens</h4>
-													<span>No:2, 4th Avenue, Newyork, USA, Near to Airport</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Real estate</h4>
-													<span>Chennai, India</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Education</h4>
-													<span>Schools, university, colleges, online classes, tution centers, distance education..</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Hotel and resort booking</h4>
-													<span>hotel booking online, hotel reservation, holiday room booking</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Import and export</h4>
-													<span>Import and export to other countrys with low cost</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Properties in Illunois</h4>
-													<span>Villas, Plots, House rent and buy</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Schools in Adyar</h4>
-													<span>schools, adyar, education, </span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Laptop services near you</h4>
-													<span>laptop services, computer services</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-											<li>
-												<div>
-													<h4>Hospital and medical services near you</h4>
-													<span>Hospital and medical services near you</span>
-													<a href="all-listing.html"></a>
-												</div>
-											</li>
-										</ul>
-									</li>
-									<li class="sr-btn">
-										<input type="submit" id="filter_submit" name="filter_submit" value="Search" class="filter_submit"/>
-									</li>
-								</ul>
-							</form>
-						</div>
-						<div class="ban-ql">
-							<ul>
-								<li>
-									<div>
-										<img src="images/icon/1.png" alt=""/>
-										<h4>24 Million Business</h4>
-										<p>Choose from a collection of handpicked luxury villas & apartments</p> <a href="#">Explore Now</a>
-									</div>
-								</li>
-								<li>
-									<div>
-										<img src="images/icon/2.png" alt=""/>
-										<h4>1,200 Services Offered</h4>
-										<p>Choose from a collection of handpicked luxury villas & apartments</p> <a href="#">Explore Now</a>
-									</div>
-								</li>
-								<li>
-									<div>
-										<img src="images/icon/3.png" alt=""/>
-										<h4>05 Million Visitors</h4>
-										<p>Choose from a collection of handpicked luxury villas & apartments</p> <a href="#">Explore Now</a>
-									</div>
-								</li>
-								<li>
-									<div>
-										<img src="images/icon/4.png" alt=""/>
-										<h4>2k+ Premium Users</h4>
-										<p>Choose from a collection of handpicked luxury villas & apartments</p> <a href="#">Explore Now</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
+
+			
 		</div>
     </div>
   );
 }
 
-export default Header;
+export default Header_two;
 

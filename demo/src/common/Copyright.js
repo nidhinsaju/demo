@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Section12() {
+function Copyright() {
   return (
     <div>
       
@@ -17,4 +17,4 @@ function Section12() {
   );
 }
 
-export default Section12;
+export default Copyright;

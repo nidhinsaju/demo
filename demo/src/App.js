@@ -1,13 +1,25 @@
+import Service from "./pages/Service/Service";
 import Main from "./pages/index/Main";
+import { Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import ReactDOM from 'react-dom';
+import Events from "./pages/Events/Events";
 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      
-    <Main/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        
+          <Route index element={<Main/>} />
+          <Route path="/service" element={<Service/>} />
+          <Route path="/Event" element={<Events/>} />
+          
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
